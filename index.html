@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellarte | Salón de Belleza</title>
+
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Tipografía elegante y moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para iconos bonitos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===================================
+    CABECERA PRINCIPAL - Banner con menú
+    ==================================== -->
+    <header class="header" id="inicio">
+        <!-- Contenedor del menú superior -->
+        <div class="menu container">
+            <!-- Logo del salón -->
+            <a href="#inicio" class="logo">Bellarte</a>
+
+            <!-- Botón de menú móvil (hamburguesa) -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Menú de navegación -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Contenido principal del header (hero section) -->
+        <div class="header-content container">
+            <h1>Belleza que realza tu esencia</h1>
+            <p>Un espacio donde el cuidado personal se convierte en arte. Tratamientos personalizados, productos premium y un ambiente relajante para que te sientas única.</p>
+            <a href="#servicios" class="btn-1">Descubre nuestros servicios</a>
+        </div>
+    </header>
+
+
+    <!-- ===================================
+    SECCIÓN DE SERVICIOS - Tarjetas con iconos
+    ==================================== -->
+    <section id="servicios" class="services">
+        <div class="title">
+            <h2>Nuestros Servicios</h2>
+            <p>Profesionalismo, calidad y atención personalizada en cada tratamiento.</p>
+        </div>
+
+        <div class="services-content container">
+            <!-- Servicio 1 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3>Corte & Estilizado</h3>
+                <p>Cortes modernos adaptados a tu rostro y estilo de vida. Diseñamos tu look ideal con técnicas actualizadas.</p>
+            </div>
+
+            <!-- Servicio 2 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <h3>Coloración & Mechas</h3>
+                <p>Desde tonos naturales hasta looks vanguardistas. Usamos productos sin amoníaco para proteger tu cabello.</p>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-hand-sparkle"></i>
+                </div>
+                <h3>Manicura & Pedicura</h3>
+                <p>Esmaltes semipermanentes, hidratación profunda y diseño artístico para uñas impecables.</p>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-spa"></i>
+                </div>
+                <h3>Tratamientos Faciales</h3>
+                <p>Limpiezas profundas, mascarillas nutritivas y terapias anti-edad para una piel radiante.</p>
+            </div>
+
+            <!-- Servicio 5 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Depilación</h3>
+                <p>Técnicas suaves y eficaces con cera profesional. Resultados duraderos y piel sedosa.</p>
+            </div>
+
+            <!-- Servicio 6 -->
+            <div class="service-box">
+                <div class="service-icon">
+                    <i class="fas fa-magic"></i>
+                </div>
+                <h3>Maquillaje Profesional</h3>
+                <p>Para eventos especiales, bodas o sesiones fotográficas. Realzamos tu belleza natural.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================
+    BANNER DESTACADO - Promoción o mensaje especial
+    ==================================== -->
+    <section class="promo">
+        <div class="promo-content container">
+            <h2>✨ ¡Primer visita con 20% de descuento! ✨</h2>
+            <p>Agenda tu cita hoy y vive una experiencia de belleza inolvidable.</p>
+            <a href="#contacto" class="btn-2">Agendar ahora</a>
+        </div>
+    </section>
+
+
+    <!-- ===================================
+    GALERÍA DE IMÁGENES - Trabajos realizados
+    ==================================== -->
+    <section id="galeria" class="gallery">
+        <div class="title">
+            <h2>Trabajos Recientes</h2>
+            <p>Conoce algunos de nuestros resultados más destacados.</p>
+        </div>
+
+        <div class="gallery-content container">
+            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corte de cabello">
+            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coloración">
+            <img src="https://images.unsplash.com/photo-1519805093257-088678d39524?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Manicura">
+            <img src="https://images.unsplash.com/photo-1595968244-0967f95e705b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tratamiento facial">
+            <img src="https://images.unsplash.com/photo-1529626455594-0c8e4a298eaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mezcla de colores">
+            <img src="https://images.unsplash.com/photo-1580365385-8854b8343146?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Uñas decoradas">
+        </div>
+    </section>
+
+
+    <!-- ===================================
+    TESTIMONIOS DE CLIENTES - Frases reales
+    ==================================== -->
+    <section id="testimonios" class="testimonials">
+        <div class="title">
+            <h2>Lo que dicen nuestras clientas</h2>
+            <p>Confianza, calidad y resultados que hablan por sí solos.</p>
+        </div>
+
+        <div class="testimonials-content container">
+            <div class="testimonial-box">
+                <p class="quote">"¡Me sentí como una reina! El trato fue exquisito y el resultado, perfecto. Volveré sin duda."</p>
+                <p class="client">— Laura M., cliente desde 2023</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="quote">"El mejor salón que he visitado. Mis mechas quedaron naturales y brillantes. ¡Gracias!"</p>
+                <p class="client">— Carla R., novia del mes</p>
+            </div>
+            <div class="testimonial-box">
+                <p class="quote">"La manicura dura más de 3 semanas y la atención es impecable. Altamente recomendado."</p>
+                <p class="client">— Sofía T., empresaria</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================
+    CONTACTO - Información y imagen del local
+    ==================================== -->
+    <section id="contacto" class="contact">
+        <div class="contact-content container">
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <h2>¡Agenda tu cita!</h2>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Avenida Belleza 456, Zona Rosa</p>
+                <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +1 (555) 987-6543</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hola@bellarte.com</p>
+                <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+                <p>¿Tienes dudas? Escríbenos y te responderemos en menos de 24 horas.</p>
+                <a href="mailto:hola@bellarte.com" class="btn-1">Enviar mensaje</a>
+            </div>
+
+            <!-- Imagen del interior del salón -->
+            <div class="contact-image">
+                <img src="https://images.unsplash.com/photo-1570172619-1fc36f697540?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Interior del salón de belleza">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================================
+    PIE DE PÁGINA
+    ==================================== -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Bellarte Salón de Belleza. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
