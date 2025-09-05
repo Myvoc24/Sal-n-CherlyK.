@@ -1,131 +1,118 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bellarte | Salón de Belleza</title>
-
-    <!-- Enlace al archivo CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts: Tipografía elegante y moderna -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome para iconos bonitos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CherlyK · Elegancia que inspira</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5c3a9d58bb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-    <!-- ===================================
-    CABECERA PRINCIPAL - Banner con menú
-    ==================================== -->
-    <header class="header" id="inicio">
-        <!-- Contenedor del menú superior -->
-        <div class="menu container">
-            <!-- Logo del salón -->
-            <a href="#inicio" class="logo">Bellarte</a>
+  <header class="hero" id="inicio">
+    <input type="checkbox" id="menu-toggle" aria-label="Abrir menú de navegación">
+    <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+    <nav class="navbar container">
+      <a href="#inicio" class="logo">CherlyK</a>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#transformaciones">Galería</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content container">
+      <h1>Donde tu belleza florece con confianza</h1>
+      <p>Un refugio de elegancia y calidez, dedicado a resaltar tu esencia con delicadeza. Bienvenida a tu espacio.</p>
+      <a href="#servicios" class="btn-hero">Ver servicios</a>
+    </div>
+  </header>
 
-            <!-- Botón de menú móvil (hamburguesa) -->
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <i class="fas fa-bars"></i>
-            </label>
-
-            <!-- Menú de navegación -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <!-- Contenido principal del header (hero section) -->
-        <div class="header-content container">
-            <h1>Belleza que realza tu esencia</h1>
-            <p>Un espacio donde el cuidado personal se convierte en arte. Tratamientos personalizados, productos premium y un ambiente relajante para que te sientas única.</p>
-            <a href="#servicios" class="btn-1">Descubre nuestros servicios</a>
-        </div>
-    </header>
-
+</body>
 
     <!-- ===================================
-    SECCIÓN DE SERVICIOS - Tarjetas con iconos
+    SECCIÓN DE SERVICIOS
     ==================================== -->
-    <section id="servicios" class="services">
-        <div class="title">
-            <h2>Nuestros Servicios</h2>
-            <p>Profesionalismo, calidad y atención personalizada en cada tratamiento.</p>
-        </div>
+    <!-- SECCIÓN DE SERVICIOS - Con imágenes reales -->
+<section id="servicios" class="services">
+    <div class="title">
+        <h2>Nuestros Servicios</h2>
+        <p>Profesionalismo, calidad y atención personalizada en cada tratamiento.</p>
+    </div>
 
-        <div class="services-content container">
-            <!-- Servicio 1 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-cut"></i>
-                </div>
-                <h3>Corte & Estilizado</h3>
-                <p>Cortes modernos adaptados a tu rostro y estilo de vida. Diseñamos tu look ideal con técnicas actualizadas.</p>
+    <div class="services-content container">
+        <!-- Servicio 1 -->
+        <div class="service-box">
+            <div class="glow-particles"></div>
+            <div class="service-image">
+                <img src="data:image/jpeg;base64,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" alt="Microblading resultados">
+             <!--   <div class="service-badge">4.500$</div> -->
             </div>
-
-            <!-- Servicio 2 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-paint-brush"></i>
-                </div>
-                <h3>Coloración & Mechas</h3>
-                <p>Desde tonos naturales hasta looks vanguardistas. Usamos productos sin amoníaco para proteger tu cabello.</p>
-            </div>
-
-            <!-- Servicio 3 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-hand-sparkle"></i>
-                </div>
-                <h3>Manicura & Pedicura</h3>
-                <p>Esmaltes semipermanentes, hidratación profunda y diseño artístico para uñas impecables.</p>
-            </div>
-
-            <!-- Servicio 4 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-spa"></i>
-                </div>
-                <h3>Tratamientos Faciales</h3>
-                <p>Limpiezas profundas, mascarillas nutritivas y terapias anti-edad para una piel radiante.</p>
-            </div>
-
-            <!-- Servicio 5 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h3>Depilación</h3>
-                <p>Técnicas suaves y eficaces con cera profesional. Resultados duraderos y piel sedosa.</p>
-            </div>
-
-            <!-- Servicio 6 -->
-            <div class="service-box">
-                <div class="service-icon">
-                    <i class="fas fa-magic"></i>
-                </div>
-                <h3>Maquillaje Profesional</h3>
-                <p>Para eventos especiales, bodas o sesiones fotográficas. Realzamos tu belleza natural.</p>
+            <div class="service-content">
+                <h2>Microblading & Diseño de cejas</h2>
+                <p>Para una mirada que hable por sí misma. Con técnica experta y pigmentos de primera, creamos cejas naturales y perfectas, hechas enteramente a tu medida. Tu rostro se merece lo mejor, y aquí lo encuentras.</p>
+                <h4>4.500cup</h4>
             </div>
         </div>
-    </section>
 
+        <!-- Servicio 2 -->
+        <div class="service-box">
+            <div class="glow-particles"></div>
+            <div class="service-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFDDouA4bRvJiqLgtPycVebhyBuzHhho5VsA&s" alt="Delineado de precisión">
+            </div>
+            <div class="service-content">
+                <h2>Delineado de Precisión</h2>
+                <p>La línea perfecta para una mirada irresistible. Trazos limpios, intensos y a medida. Define y eleva tu mirada al instante. Dale a tus ojos un toque de elegancia.</p>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="service-box">
+            <div class="glow-particles"></div>
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1512496015859-c0e9e6b6cd79?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Extensiones de pestañas">
+            </div>
+            <div class="service-content">
+                <h2>Extensiones de Pestañas</h2>
+                <p>Para una mirada vibrante y seductora. Volumen intenso, comodidad absoluta y un efecto tan natural que parecen tuyas. Despierta miradas con elegancia.</p>
+            </div>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="service-box">
+            <div class="glow-particles"></div>
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1570172619642-d12160afc282?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tratamientos faciales">
+            </div>
+            <div class="service-content">
+                <h2>Tratamientos Faciales</h2>
+                <p>Sumérgete en un ritual de belleza donde la ciencia y el lujo se encuentran. Diseñamos cada tratamiento para devolverle a tu piel su luminosidad natural, con hidratación profunda y resultados anti-edad que se ven… y se sienten. Porque tu piel merece una experiencia transformadora, no solo un cuidado.</p>
+            </div>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="service-box">
+            <div class="glow-particles"></div>
+            <div class="service-image">
+                <img src="https://images.unsplash.com/photo-1621264968376-1c6e3543df3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Láser de precisión">
+            </div>
+            <div class="service-content">
+                <h2>Eliminación de Verrugas</h2>
+                <p>Di adiós a las verrugas con resultados seguros y definitivos. Nuestro láser actúa con precisión milimétrica para eliminarlas sin dañar tu piel. En pocos días, lucirás una piel lisa, uniforme y renovada.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- ===================================
     BANNER DESTACADO - Promoción o mensaje especial
     ==================================== -->
     <section class="promo">
         <div class="promo-content container">
-            <h2>✨ ¡Primer visita con 20% de descuento! ✨</h2>
-            <p>Agenda tu cita hoy y vive una experiencia de belleza inolvidable.</p>
+            <h2>✨ 8 Años de Experiencia | Tu Belleza en Manos Expertas! ✨</h2>
+            <p>Elige la confianza de una trayectoria impecable, donde cada servicio es una promesa cumplida de calidad, seguridad y sofisticación.</p>
             <a href="#contacto" class="btn-2">Agendar ahora</a>
         </div>
     </section>
@@ -134,26 +121,54 @@
     <!-- ===================================
     GALERÍA DE IMÁGENES - Trabajos realizados
     ==================================== -->
-    <section id="galeria" class="gallery">
+<!-- ===================================
+    SECCIÓN DE TRANSFORMACIONES - Nuestro Portafolio
+    ==================================== -->
+    <section id="transformaciones" class="transformations">
         <div class="title">
-            <h2>Trabajos Recientes</h2>
-            <p>Conoce algunos de nuestros resultados más destacados.</p>
+            <h2>La Prueba de Nuestra Excelencia</h2>
+            <p>Explora resultados reales y descubre el potencial de tu belleza cuando es trabajada con experiencia y dedicación. Estas no son solo imágenes; son promesas cumplidas.</p>
         </div>
-
+    
+        <!-- Filtros por servicio (opcional, pero muy recomendado) 
+        <div class="filters container">
+            <button data-filter="all">Todos</button>
+            <button data-filter="microblading">Microblading</button>
+     <button data-filter="laser">Láser</button>
+            <button data-filter="extensiones">Extensiones</button>
+            <button data-filter="facial">Tratamientos Faciales</button>
+        </div> -->
+    
         <div class="gallery-content container">
-            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Corte de cabello">
-            <img src="https://images.unsplash.com/photo-1562322140-8baeececf3b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Coloración">
-            <img src="https://images.unsplash.com/photo-1519805093257-088678d39524?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Manicura">
-            <img src="https://images.unsplash.com/photo-1595968244-0967f95e705b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tratamiento facial">
-            <img src="https://images.unsplash.com/photo-1529626455594-0c8e4a298eaa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mezcla de colores">
-            <img src="https://images.unsplash.com/photo-1580365385-8854b8343146?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Uñas decoradas">
+            <!-- Ejemplo de un item con slider de antes/después -->
+            <div class="gallery-item" data-category="microblading">
+                <div class="before-after-slider">
+                    <img src="data:image/jpeg;base64,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" alt="Cejas antes del microblading" class="before">
+                    <img src="data:image/jpeg;base64,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" alt="Cejas después del microblading" class="after">
+                </div>
+                <h3>Microblading de Precisión</h3>
+                <p>De cejas indefinidas a una estructura perfecta y natural.</p>
+                <a href="#contacto" class="cta-button">Quiero este resultado</a> <!-- ENLACE IMPORTANTE -->
+            </div>
+    
+            <div class="gallery-item" data-category="laser">
+                <div class="before-after-slider">
+                    <img src="data:image/jpeg;base64,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" alt="Piel antes del láser" class="before">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgNeh3tVuMc-MDx4VYy_90r-mMm3qNCkYcQ6eeutdeTx6J2ZTGVKai2U&s" alt="Piel después del láser" class="after">
+                </div>
+                <h3>Eliminación Láser de Verrugas</h3>
+                <p>Piel lisa y uniforme, libre de imperfecciones.</p>
+                <a href="#contacto" class="cta-button">Quiero este resultado</a> <!-- ENLACE IMPORTANTE -->
+            </div>
+    
+            <!-- ... Repetir para otros servicios ... -->
         </div>
     </section>
 
 
     <!-- ===================================
     TESTIMONIOS DE CLIENTES - Frases reales
-    ==================================== -->
+    ==================================== 
     <section id="testimonios" class="testimonials">
         <div class="title">
             <h2>Lo que dicen nuestras clientas</h2>
@@ -174,7 +189,7 @@
                 <p class="client">— Sofía T., empresaria</p>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <!-- ===================================
@@ -185,12 +200,12 @@
             <!-- Información de contacto -->
             <div class="contact-info">
                 <h2>¡Agenda tu cita!</h2>
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Avenida Belleza 456, Zona Rosa</p>
-                <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +1 (555) 987-6543</p>
-                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> hola@bellarte.com</p>
-                <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Dirección:</strong> Reparto Vista Hermosa.</p>
+                <p><i class="fas fa-phone"></i> <strong>Teléfono:</strong> +53 53843467</p>
+                <p><i class="fas fa-clock"></i> <strong>Horario:</strong> Martes a Viernes: 8:30 AM - 5:00 PM</p>
+                <p>Puedes contactarme al WhatsApp o al fijo para reservar tu turno.</p>
                 <p>¿Tienes dudas? Escríbenos y te responderemos en menos de 24 horas.</p>
-                <a href="mailto:hola@bellarte.com" class="btn-1">Enviar mensaje</a>
+                <a href="mailto:hola@cherlyk.com" class="btn-1">Enviar mensaje</a>
             </div>
 
             <!-- Imagen del interior del salón -->
@@ -206,7 +221,7 @@
     ==================================== -->
     <footer class="footer">
         <div class="footer-content container">
-            <p>&copy; 2025 Bellarte Salón de Belleza. Todos los derechos reservados.</p>
+            <p>&copy; 2025 CherlyK Salón de Belleza. Todos los derechos reservados.</p>
             <div class="social-icons">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
